@@ -33,6 +33,19 @@ body {
 
 .bname {
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     margin-left: -8px
+}
+.bname i {
+    font-size: 20px;
+}
+.bname a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.bname a:hover {
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
 }
