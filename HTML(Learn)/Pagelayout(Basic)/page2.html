@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page2</title>
+</head>
+<style>
+    .head{
+        margin: 5px;
+        text-align: center;
+        background-color: bisque;
+        padding: 60px;
+    }
+    .nav{
+        height: 60px;
+        margin: 5px;
+        text-align: center;
+        background-color: bisque;    
+    }
+    .row{
+
+        margin: 5px;
+        text-align: center;
+        padding: 0;
+    }
+    .cloums{
+        float: left;
+    }
+    .cloums.side{
+        width: 25%;
+        background-color: pink;
+        height: 300px;
+    }
+    .cloums.mid{
+        background-color: aqua;
+        width: 50%;
+        height: 300px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    .foo{
+        margin: 5px;
+        text-align: center;
+        background-color: bisque;
+        padding: 60px;
+    }
+</style>
+<body>
+    <!-- หัว -->
+    <div class="head">
+        Head
+    </div>
+    <!-- nav -->
+    <div class="nav">
+        Navigation
+    </div>
+    <!-- content -->
+    <div class="row">
+        <div class="cloums side"> SideContent </div>
+        <div class="cloums mid"> Content </div>
+        <div class="cloums side"> Sideontent </div>
+    </div>
+    <!-- ท้าย -->
+    <div class="foo">
+        Footer
+    </div>
+    
+</body>
+</html>

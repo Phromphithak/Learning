@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Page</title>
+</head>
+
+<body>
+    <!-- เมนู -->
+    <div class="nav">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Content">Content</a></li>
+            <li style="float: right;"><a href="#About">About</a></li>
+        </ul>
+    </div>
+    <!-- slide -->
+    <div class="w3-container">
+        <div class="w3-content w3-display-container">
+            <div class="w3-display-container mySlides">
+                <img src="img/coffee.jpg" style="width:100%">
+            </div>
+
+            <div class="w3-display-container mySlides">
+                <img src="img/sound.jpg" style="width:100%">
+            </div>
+
+            <div class="w3-display-container mySlides">
+                <img src="img/workbench.jpg" style="width:100%">
+            </div>
+
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+        </div>
+        <!--เนื้อหา-->
+        <div class="con">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur veritatis modi illo molestiae nesciunt? Impedit, pariatur esse voluptatibus totam sed hic molestiae, consequuntur veniam inventore beatae eius animi quam quod!
+        </div>
+        <!--ท้าย-->
+        <div class="foo">Footer</div>
+
+</body>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+</html>

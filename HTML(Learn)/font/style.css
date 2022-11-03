@@ -1,0 +1,7 @@
+@font-face{
+    font-family: Kodchasan;
+    src: url(./font/Kodchasan-Regular.ttf)
+}
+h1,div,body{
+    font-family: 'Kodchasan', sans-serif;
+}
